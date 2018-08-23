@@ -1,0 +1,142 @@
+var box = "";
+var i;
+for (i = 1; i < 10; i++) {
+	box += "<div class='box' id='a"+i+"' onclick ='f1(this)'></div>";
+};
+document.getElementById('box').innerHTML = box;
+
+var clicks = 0;
+
+var a1,a2,a3,a4,a5,a6,a7,a8,a9;
+
+function f1 (obj) {
+	if (obj.innerText != " ") {
+		return
+	}
+	clicks++;
+	if (clicks % 2 == 1) {
+		obj.innerText = "X";
+	}
+	else {
+		obj.innerText = "0";
+	}
+	a1 = document.getElementById("a1").innerText;
+	a2 = document.getElementById("a2").innerText;
+	a3 = document.getElementById("a3").innerText;
+	a4 = document.getElementById("a4").innerText;
+	a5 = document.getElementById("a5").innerText;
+	a6 = document.getElementById("a6").innerText;
+	a7 = document.getElementById("a7").innerText;
+	a8 = document.getElementById("a8").innerText;
+	a9 = document.getElementById("a9").innerText;
+	if (a1 == a2 && a2 == a3 && a1 != "") {
+		alert ("winner "+ a1);
+		document.getElementById("a1").innerText = "";
+		document.getElementById("a2").innerText = "";
+		document.getElementById("a3").innerText = "";
+		document.getElementById("a4").innerText = "";
+		document.getElementById("a5").innerText = "";
+		document.getElementById("a6").innerText = "";
+		document.getElementById("a7").innerText = "";
+		document.getElementById("a8").innerText = "";
+     	document.getElementById("a9").innerText = "";
+	}
+	if (a4 == a5 && a5 == a6 && a4 != "") {
+		alert ("winner "+ a4);
+		document.getElementById("a1").innerText = "";
+		document.getElementById("a2").innerText = "";
+		document.getElementById("a3").innerText = "";
+		document.getElementById("a4").innerText = "";
+		document.getElementById("a5").innerText = "";
+		document.getElementById("a6").innerText = "";
+		document.getElementById("a7").innerText = "";
+		document.getElementById("a8").innerText = "";
+     	document.getElementById("a9").innerText = "";	
+	} 
+	if (a7 == a8 && a8 == a9 && a7 != "") {
+		alert ("winner "+ a7);
+		document.getElementById("a1").innerText = "";
+		document.getElementById("a2").innerText = "";
+		document.getElementById("a3").innerText = "";
+		document.getElementById("a4").innerText = "";
+		document.getElementById("a5").innerText = "";
+		document.getElementById("a6").innerText = "";
+		document.getElementById("a7").innerText = "";
+		document.getElementById("a8").innerText = "";
+     	document.getElementById("a9").innerText = "";	
+	} 
+	if (a1 == a4 && a4 == a7 && a1 != "") {
+		alert ("winner "+ a1);
+		document.getElementById("a1").innerText = "";
+		document.getElementById("a2").innerText = "";
+		document.getElementById("a3").innerText = "";
+		document.getElementById("a4").innerText = "";
+		document.getElementById("a5").innerText = "";
+		document.getElementById("a6").innerText = "";
+		document.getElementById("a7").innerText = "";
+		document.getElementById("a8").innerText = "";
+     	document.getElementById("a9").innerText = "";	
+	} 
+	if (a1 == a5 && a5 == a9 && a1 != "") {
+		alert ("winner "+ a1);
+		document.getElementById("a1").innerText = "";
+		document.getElementById("a2").innerText = "";
+		document.getElementById("a3").innerText = "";
+		document.getElementById("a4").innerText = "";
+		document.getElementById("a5").innerText = "";
+		document.getElementById("a6").innerText = "";
+		document.getElementById("a7").innerText = "";
+		document.getElementById("a8").innerText = "";
+     	document.getElementById("a9").innerText = "";	
+	} 
+	if (a2 == a5 && a5 == a8 && a2 != "") {
+		alert ("winner "+ a2);
+		document.getElementById("a1").innerText = "";
+		document.getElementById("a2").innerText = "";
+		document.getElementById("a3").innerText = "";
+		document.getElementById("a4").innerText = "";
+		document.getElementById("a5").innerText = "";
+		document.getElementById("a6").innerText = "";
+		document.getElementById("a7").innerText = "";
+		document.getElementById("a8").innerText = "";
+     	document.getElementById("a9").innerText = "";	
+	} 
+	if (a3 == a6 && a6 == a9 && a3 != "") {
+		alert ("winner "+ a3);
+		document.getElementById("a1").innerText = "";
+		document.getElementById("a2").innerText = "";
+		document.getElementById("a3").innerText = "";
+		document.getElementById("a4").innerText = "";
+		document.getElementById("a5").innerText = "";
+		document.getElementById("a6").innerText = "";
+		document.getElementById("a7").innerText = "";
+		document.getElementById("a8").innerText = "";
+     	document.getElementById("a9").innerText = "";	
+	} 
+	if (a3 == a5 && a5 == a7 && a3 != "") {
+		alert ("winner "+ a3);
+		document.getElementById("a1").innerText = "";
+		document.getElementById("a2").innerText = "";
+		document.getElementById("a3").innerText = "";
+		document.getElementById("a4").innerText = "";
+		document.getElementById("a5").innerText = "";
+		document.getElementById("a6").innerText = "";
+		document.getElementById("a7").innerText = "";
+		document.getElementById("a8").innerText = "";
+     	document.getElementById("a9").innerText = "";	
+	}
+	if (a1 != "" && a2 != "" && a3 != "" && a4 != "" && a5 != "" && a6 != "" && a7 != "" && a8 != "" && a9 != "") {
+		alert ("nicha nicha");
+		document.getElementById("a1").innerText = "";
+		document.getElementById("a2").innerText = "";
+		document.getElementById("a3").innerText = "";
+		document.getElementById("a4").innerText = "";
+		document.getElementById("a5").innerText = "";
+		document.getElementById("a6").innerText = "";
+		document.getElementById("a7").innerText = "";
+		document.getElementById("a8").innerText = "";
+     	document.getElementById("a9").innerText = "";	
+	} 
+};
+
+
